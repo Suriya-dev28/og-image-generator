@@ -10,11 +10,11 @@ public class ShareController {
     @GetMapping(value = "/share", produces = "text/html")
     public String share(
             @RequestParam(defaultValue = "Dynamic OG Image") String title,
-            @RequestParam(defaultValue = "Java Spring Boot Generator") String subtitle
+            @RequestParam(defaultValue = "Java Spring Boot OG Generator") String subtitle
     ) {
 
         String imageUrl =
-                "https://og-image-generator.onrender.com/og"
+                "https://og-image-generator-ag6m.onrender.com/og"
                         + "?title=" + title.replace(" ", "+")
                         + "&subtitle=" + subtitle.replace(" ", "+");
 
@@ -24,11 +24,16 @@ public class ShareController {
         <head>
             <title>%s</title>
 
+            <!-- Open Graph -->
             <meta property="og:title" content="%s"/>
             <meta property="og:description" content="%s"/>
             <meta property="og:image" content="%s"/>
+            <meta property="og:image:type" content="image/png"/>
+            <meta property="og:image:width" content="1200"/>
+            <meta property="og:image:height" content="630"/>
             <meta property="og:type" content="website"/>
 
+            <!-- Twitter -->
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:title" content="%s"/>
             <meta name="twitter:description" content="%s"/>
@@ -36,7 +41,6 @@ public class ShareController {
         </head>
         <body>
             <h2>OG Preview Generated</h2>
-            <p>Share this link on WhatsApp / Facebook / LinkedIn</p>
         </body>
         </html>
         """.formatted(
