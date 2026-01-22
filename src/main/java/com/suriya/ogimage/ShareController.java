@@ -14,7 +14,7 @@ public class ShareController {
     ) {
 
         String imageUrl =
-                "https://og-image-generator-ag6m.onrender.com/og"
+                "https://og-image-generator-7kgr.onrender.com/og"
                         + "?title=" + title.replace(" ", "+")
                         + "&subtitle=" + subtitle.replace(" ", "+")
                         + "&v=" + System.currentTimeMillis();
@@ -52,3 +52,4 @@ public class ShareController {
         );
     }
 }
+
