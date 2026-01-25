@@ -26,7 +26,7 @@ public class ShareController {
         <head>
             <title>%s</title>
 
-            //open graph
+           <!-- Open Graph -->
             <meta property="og:title" content="%s"/>
             <meta property="og:description" content="%s"/>
             <meta property="og:image" content="%s"/>
@@ -36,7 +36,7 @@ public class ShareController {
             <meta property="og:image:height" content="630"/>
             <meta property="og:type" content="website"/>
 
-            //twitter
+            <!-- Twitter -->
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:title" content="%s"/>
             <meta name="twitter:description" content="%s"/>
@@ -52,4 +52,5 @@ public class ShareController {
         );
     }
 }
+
 
