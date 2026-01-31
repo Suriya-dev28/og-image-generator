@@ -38,5 +38,3 @@ https://og-image-generator-7kgr.onrender.com/share
 ## Deployment
 The application is containerized using Docker and deployed on the Render cloud platform.
 
-## Author
-Suriya
